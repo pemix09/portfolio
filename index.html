@@ -6,22 +6,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
         <title>Portifolio</title>
         <meta charset="UTF-8"/>
+        <script src="https://kit.fontawesome.com/69b29487c4.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <section class = "hero">
             <nav>
                 <img class="logo" src="src/images/logo2.png" alt = "cool logo">
-                <ul>
-                    <li>O mnie</li>
-                    <li>Projekty</li>
-                    <li>Skontaktuj się ze mną</li>
+                <ul id="nav-list">
+                    <li><a href="#about-me">O mnie</a> </li>
+                    <li><a href="#projects">Projekty</a></li>
+                    <li><a href="#contact">Skontaktuj się ze mną</a></li>
                 </ul>
+                <button class="hamburger" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </button>
             </nav>
             <div class="hero-area">
                 <div class="hero-text">
                     <h1>Przemysław Klejno</h1>
                     <p>Full Stack Developer</p>
-                <div class="button">About me</div>
+                <div class="button">O mnie</div>
             </div>
             <div class="socials">
                 <div>
@@ -42,15 +46,59 @@
             </div>
         </div>
         </section>
-        <section>
-            <div class="info">
-                <h2>About me</h2>
-                <p>Cześć! Nazywam się Przemysław Klejno, jestem deweloperem oprogramowania</p>
+        <section class = "subsection" id="about-me">
+            <div class="info" >
+                <h2>O mnie</h2>
+                <p>Cześć! Nazywam się Przemysław Klejno, jestem deweloperem oprogramowania
+                oraz studentem politechniki białostockiej.</p>
 
             </div>
+            <div class="headshot-container">
+                <img class="headshot" src="src/images/joker.png" alt="Zdjęcie Przemysława Klejno"/>
+            </div>
         </section>
-        <section></section>
-        <footer></footer>
+
+        <section class="subsection2" id="projects">
+            <h2>projects</h2>
+            <div class = "projects">
+                    <div class="project">
+                        <img class="project-image" src="" alt="">
+                        <h3>Pierwszy projekt</h3>
+                        <p class="projectDescription">To jest pierwszy projekt, zajebiście się
+                            przy nim pracowało
+                        </p>
+                        <hr/>
+                        <p class="projectDescription"><a class="project-link" href="https://github.com/">Obejrzyj</a></p>
+                    </div>
+                    <div class="project">
+                        <img class="project-image" src="" alt="">
+                        <h3>Drugi projekt</h3>
+                        <p class="projectDescription">To jest drugi projekt, uwielbiam przy nim dłbuać</p>
+                        <hr/>
+                        <p class="projectDescription"><a class="project-link" href="https://github.com/">Obejrzyj</a></p>
+                    </div>
+                    <div class="project">
+                        <img class="project-image" src="" alt="">
+                        <h3>Trzeci projekt</h3>
+                        <p class="projectDescription">Trzeci projekt. Pojebane gówno XD</p>
+                        <hr/>
+                        <p class="projectDescription"><a class="project-link" href="https://github.com/">Obejrzyj</a></p>
+                    </div>
+                    <div class="project">
+                        <img class="project-image" src="" alt="">
+                        <h3>Czwarty projekt</h3>
+                        <p class="projectDescription">Auuuu byczq</p>
+                        <hr/>
+                        <p class="projectDescription"><a class="project-link" href="https://github.com/">Obejrzyj</a></p>
+                    </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Skontaktuj się ze mną</h2>
+            <p>email: pemix09@onet.pl</p>
+
+        </footer>
 
         <script scr="src/app.js"></script>
     </body>
