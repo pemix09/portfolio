@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -7,21 +11,34 @@ body{
 section{
     height:500px;
     background-color: rgb(255, 255, 255);
+    
 }
 
 .subsection{
     display:flex ;
     justify-content: space-around;
-    padding: 60px;
+    padding: 80px;
     align-items: center;
- 
+  
  }
+ @media only screen and (max-width: 1000px)
+{
+    .subsection{
+        margin-bottom: 400px;
+    }
+}
  .subsection2{
      display:flex;
      flex-direction:column;
      text-align:center;
-     padding: 250px;
+     padding: 80px;
      justify-content: space-around;
+ }
+ @media only screen and (max-width: 1000px)
+ {
+     .subsection2{
+         margin-bottom: 400px;
+     }
  }
 
 .hero{
@@ -37,6 +54,7 @@ footer{
     text-align:center;
     padding: 80px;
 }
+
 nav{
     display:flex;
     justify-content: space-between;
@@ -129,7 +147,7 @@ p{
 }
 .project{
     width:300px;
-    height:400px;
+    height:500px;
     box-shadow:5px 5px 20px grey;
     margin:10px;
 }
@@ -137,6 +155,7 @@ p{
 .projects{
     display:flex;
     justify-content: space-around;
+    padding-bottom: 100px;
 }
 /*co kolwiek równe bądź mniejsze od 1000px
 będzie miało inny styl*/
