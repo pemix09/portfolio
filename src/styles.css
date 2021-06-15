@@ -3,6 +3,7 @@
     --MainTheme: rgb(0, 98, 255);
     --bg_color: rgb(26, 26, 37);
     --SecondColor: rgb(255,255,255);
+    --hover: orange;
 }
 
 html {
@@ -59,8 +60,13 @@ section{
     color: var(--SecondColor);
 }
 .hoover:hover{
-    fill:var(--MainTheme);
-    color:var(--MainTheme);
+    fill:var(--hover);
+    color:var(--hover);
+}
+.hoover:active{
+    background-color: darkgrey;
+    color: #808080;
+    fill: darkgrey;
 }
 .RowFlex{
     display: flex;
@@ -137,7 +143,7 @@ p{
     margin-top:20px;
 }
 .button:hover{
-    background-color: orange;
+    background-color: var(--hover);
 }
 
 .button:active{
@@ -152,6 +158,7 @@ p{
 .logo{
     height:150px;
     margin:30px;
+    fill:var(--SecondColor);
 }
 .social{
     margin: 10px;
