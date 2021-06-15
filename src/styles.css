@@ -54,9 +54,18 @@ section{
     color:var(--SecondColor);
     font-size: 40px;
 }
-.hooverRed:hover{
+.hoover{
+    fill:var(--SecondColor);
+    color: var(--SecondColor);
+}
+.hoover:hover{
     fill:var(--MainTheme);
     color:var(--MainTheme);
+}
+.RowFlex{
+    display: flex;
+    align-items: center;
+    gap:5px;
 }
 footer{
     background-color: var(--bg_color);
@@ -68,6 +77,13 @@ footer{
 nav{
     display:flex;
     justify-content: space-between;
+    align-items: flex-start;
+    
+}
+#nav-list{
+    display: flex;
+    justify-items: center;
+    align-items:center;
 }
 
 ul{
