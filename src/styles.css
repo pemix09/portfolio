@@ -1,3 +1,10 @@
+﻿:root 
+{
+    --MainTheme: rgb(0, 98, 255);
+    --bg_color: rgb(26, 26, 37);
+    --SecondColor: rgb(255,255,255);
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -10,7 +17,7 @@ body{
 
 section{
     height:500px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--SecondColor);
     
 }
 
@@ -42,15 +49,18 @@ section{
  }
 
 .hero{
-    background-color: rgb(26, 26, 37);
+    background-color: var(--bg_color);
     height:100vh;
-    color:white;
+    color:var(--SecondColor);
     font-size: 40px;
 }
-
+.hooverRed:hover{
+    fill:var(--MainTheme);
+    color:var(--MainTheme);
+}
 footer{
-    background-color: black;
-    color:white;
+    background-color: var(--bg_color);
+    color:var(--SecondColor);
     text-align:center;
     padding: 80px;
 }
@@ -102,7 +112,7 @@ p{
 .button{
     width: 200px;
     height: 55px;
-    background-color: coral;
+    background-color: var(--MainTheme);
     border-radius:30px;
     text-align:center;
     font-size:30px;
@@ -137,7 +147,7 @@ p{
 .headshot{
     width:400px;
     border-radius: 50%;
-    border: 5px solid black;
+    border: 5px solid var(--bg_color);
 
 }
 
@@ -181,11 +191,11 @@ hr{
 }
 .project-link{
     text-decoration:none;
-    color:coral;
+    color:var(--MainTheme);
 }
 a{
     text-decoration: none;
-    color:white;
+    color:var(--SecondColor);
 }
 .hamburger{
     display:none;
@@ -199,7 +209,7 @@ a{
         display:block;
         border: 0;
         background-color: transparent;
-        color:white;
+        color:var(--SecondColor);
         font-size: 30px;
     }
     ul{
