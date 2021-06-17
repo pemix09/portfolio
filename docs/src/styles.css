@@ -71,7 +71,7 @@ section{
 .RowFlex{
     display: flex;
     align-items: center;
-    gap:5px;
+    gap:10px;
 }
 footer{
     background-color: var(--bg_color);
@@ -90,6 +90,8 @@ nav{
     display: flex;
     justify-items: center;
     align-items:center;
+    gap: 10px;
+    margin-right: 15px;
 }
 
 ul{
@@ -153,18 +155,32 @@ p{
 
 .socials{
     padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 15px;
 }
 
 .logo{
     height:150px;
-    margin:30px;
+    margin:30px 30px 30px 80px;
     fill:var(--SecondColor);
 }
+
+
 .social{
-    margin: 10px;
+    fill:var(--SecondColor);
+    color: var(--SecondColor);
+    margin:10px;
 }
-
-
+.social:hover{
+    fill:var(--hover);
+    color:var(--hover);
+}
+.social:active{
+    color: #808080;
+    fill: darkgrey;
+}
 
 
 .headshot{
