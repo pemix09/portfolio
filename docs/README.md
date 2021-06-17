@@ -1,2 +1,2 @@
-# portifolio
-Portifolio Przemysława Klejno
+# portfolio
+Portfolio Przemysława Klejno
