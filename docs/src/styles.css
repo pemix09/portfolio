@@ -299,25 +299,11 @@ a{
     }
     #nav-list{
     justify-content: flex-end;
-    }
-    /* .hamburger{    
-        display:block;
-        border: 0;
-        background-color: transparent;
-        color:var(--SecondColor);
-        font-size: 30px;
-        cursor: pointer;
-        margin:75px 30px 30px 180px;
-    }
-    .hamburger:hover{
-        fill: var(--hover);
-        color: var(--hover);
-    }
-    #nav-list{
-        display:none;
-    }
-    ul{
-        display: none;
-    } */
-        
+    } 
+}
+@media only screen and (max-width: 1000px){
+ 
+    .headshot{
+        width: 300px;
+    }    
 }
