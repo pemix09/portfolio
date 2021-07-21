@@ -74,6 +74,7 @@ nav{
     align-items: flex-start;
     
 }
+
 #nav-list{
     flex-direction: row;
     display: flex;
@@ -84,7 +85,11 @@ nav{
     margin-top: 70px;
 }
 #nav-list.show{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: flex-end;
 }
 ul{
     flex-direction: row;
@@ -127,6 +132,9 @@ h2{
     .info p{
         font-size: 20px;
     }
+    ul{
+        font-size: 25px;
+    }
 }
 @media only screen and (max-width: 575px)
 {
@@ -144,6 +152,9 @@ h2{
     }
     .info p{
         font-size: 15px;
+    }
+    ul{
+        font-size:15px;
     }
 }
 p{
@@ -276,13 +287,20 @@ a{
 .hamburger.notActive{
     transform: rotate(90deg);
     transition: .5s;
+    display: none;
 }
 
 
 
 
-@media only screen and (max-width: 1000px){
-    .hamburger{    
+@media only screen and (max-width: 1200px){
+    .title{
+        display: none;
+    }
+    #nav-list{
+    justify-content: flex-end;
+    }
+    /* .hamburger{    
         display:block;
         border: 0;
         background-color: transparent;
@@ -300,6 +318,6 @@ a{
     }
     ul{
         display: none;
-    }
+    } */
         
 }
