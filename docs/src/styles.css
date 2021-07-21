@@ -279,6 +279,13 @@ p{
     height:500px;
     box-shadow:5px 5px 20px grey;
     margin:10px;
+    transition:1s;
+}
+.project.ActiveLeft{
+    transform: translateX(-1500px);
+}
+.project.ActiveRight{
+    transform: translateX(-1500px);
 }
 
 .projects{
