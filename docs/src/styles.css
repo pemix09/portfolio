@@ -74,8 +74,16 @@ nav{
     align-items: flex-start;
     
 }
+.info p{
+    transform: translateX(-1500px);
+}
+.info.active p{
+    transform: translateX(0);
+    transition: 1s ease;
+}
 
 #nav-list{
+    animation: nav 2s ease;
     flex-direction: row;
     display: flex;
     justify-items: center;
@@ -83,6 +91,14 @@ nav{
     gap: 10px;
     margin-right: 30px;
     margin-top: 70px;
+}
+@keyframes nav{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 #nav-list.show{
     display: flex;
@@ -172,6 +188,15 @@ p{
 .hero-text{
     margin-left: 80px;
     margin-bottom: 200px;
+    animation: hero-text ease 2s;
+}
+@keyframes hero-text{
+    0%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 .button{
@@ -238,7 +263,11 @@ p{
     width:400px;
     border-radius: 50%;
     border: 5px solid var(--bg_color);
-
+    transform: translateX(1000px);
+}
+.headshot.active{
+    transform: translateX(0);
+    transition: 1s ease;
 }
 
 .headshot-container{
