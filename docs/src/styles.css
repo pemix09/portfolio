@@ -113,6 +113,39 @@ h1{
 h2{
     font-size: 50px;
 }
+@media only screen and (max-width: 750px)
+{
+    .hero-text h1{
+        font-size:70px;
+    }
+    .info h2{
+        font-size: 40px;
+    }
+    .headshot{
+        width: 300px;
+    }
+    .info p{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 575px)
+{
+    .hero-text h1{
+        font-size:50px;
+    }
+    .hero-text p{
+        font-size: 25px;
+    }
+    .info h2{
+        font-size: 25px;
+    }
+    .headshot img{
+        width:200px;
+    }
+    .info p{
+        font-size: 15px;
+    }
+}
 p{
     margin: 0px;
     font-size:30px;
