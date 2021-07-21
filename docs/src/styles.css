@@ -17,7 +17,6 @@ body{
 
 
 section{
-    height:500px;
     background-color: var(--SecondColor);
     
 }
@@ -29,24 +28,13 @@ section{
     align-items: center;
   
  }
- @media only screen and (max-width: 1000px)
-{
-    .subsection{
-        margin-bottom: 400px;
-    }
-}
+
  .subsection2{
      display:flex;
      flex-direction:column;
      text-align:center;
-     padding: 80px;
+     margin: 20px;
      justify-content: space-around;
- }
- @media only screen and (max-width: 1000px)
- {
-     .subsection2{
-         margin-bottom: 400px;
-     }
  }
 
 .hero{
