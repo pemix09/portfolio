@@ -1,11 +1,17 @@
-const hamburgerButton = document.getElementById('hamburger')
-const navList = document.getElementById('nav-list')
 
-function toggleButton(){
-    navList.classList.toggle('show')
-    console.log('click');
-    hamburgerButton.classList.toggle('show');
-    hamburgerButton.classList.toggle('notActive');
+
+
+const logo = document.getElementsByClassName('logo');
+
+
+setTimeout(() => {    logo[0].classList.toggle('rotateClockWise')}, 200);
+
+logo[0].addEventListener('click',Rotate);
+logo[0].addEventListener('hover',Rotate);
+
+function Rotate()
+{
+    console.log('rotate');
+    logo[0].classList.toggle('rotateClockWise');
+
 }
-
-hamburgerButton.addEventListener('click',toggleButton)

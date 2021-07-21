@@ -206,6 +206,16 @@ p{
     height:150px;
     margin:30px 30px 30px 80px;
     fill:var(--SecondColor);
+    transform: rotate(-720deg); 
+    transition: 10s ease;
+}
+.logo:hover{
+    fill:var(--hover);
+    transition: .2s;  
+}
+.logo.rotateClockWise{
+    transform: rotate(720deg);
+    transition: 3s ease;
 }
 
 
