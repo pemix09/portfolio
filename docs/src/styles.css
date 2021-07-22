@@ -77,7 +77,7 @@ nav{
     
 }
 .info p{
-    transform: translateX(-1500px);
+    transform: translateX(-2500px);
 }
 .info.active p{
     transform: translateX(0);
@@ -96,7 +96,7 @@ nav{
 }
 @keyframes nav{
     0%{
-        transform: translateX(1000px);
+        transform: translateX(-2500px);
     }
     100%{
         transform: translateX(0);
@@ -285,10 +285,10 @@ p{
     transition:1s;
 }
 .project.ActiveLeft{
-    transform: translateX(-1500px);
+    transform: translateX(-2500px);
 }
 .project.ActiveRight{
-    transform: translateX(-1500px);
+    transform: translateX(2500px);
 }
 
 .projects{
