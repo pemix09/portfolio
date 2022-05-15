@@ -1,8 +1,7 @@
-# Moje Porfolio
-## Cele:
-- projekt ma na celu ułatwienie konaktu do mnie,
-- oraz pokazanie czym się zajmowałem, czym się interesuję,
-- wszystko zaprezentowane w ciekawy, przykuwający uwagę sposób.
+# My portfolio
 
-## Link do projektu:
+## Aims:
+- to make it easy to contact me,
+
+## Project link:
 - https://pemix09.github.io/portfolio/
